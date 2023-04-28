@@ -2,7 +2,6 @@ defmodule UsersApixWeb.Api.PersonController do
   use UsersApixWeb, :controller
 
   alias UsersApix.Persons
-  alias UsersApix.Persons.Person
 
   def index(conn, _params) do
     persons = Persons.list_persons()
